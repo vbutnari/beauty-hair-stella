@@ -6,102 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #fff;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #f5c6d6, #f8e1e7);
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 36px;
-      margin-bottom: 10px;
-      color: #5a2a3a;
-    }
-
-    header p {
-      font-size: 16px;
-    }
-
-    .call-btn {
-      display: inline-block;
-      margin-top: 20px;
-      background: #b36b7a;
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      font-family: 'Playfair Display', serif;
-      color: #b36b7a;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .card {
-      background: #faf7f8;
-      border-radius: 16px;
-      padding: 25px;
-      margin-bottom: 30px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      padding: 6px 0;
-    }
-
-    .price {
-      font-weight: bold;
-      color: #5a2a3a;
-      margin-top: 10px;
-    }
-
-    footer {
-      background: #f8e1e7;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 28px;
-      }
-    }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <h1>Beauty Hair Stella</h1>
   <p>Îngrijire premium pentru părul tău</p>
-  <a class="call-btn" href="tel:069200644">📞 Sună acum</a>
 </header>
+
+<section>
+  <div class="card">
+    <h2>Contact & Programări</h2>
+
+    <div class="buttons">
+      <a href="https://wa.me/37369200644" class="btn whatsapp">WhatsApp</a>
+      <a href="viber://chat?number=37369200644" class="btn viber">Viber</a>
+      <a href="https://instagram.com/" class="btn instagram">Instagram</a>
+      <a href="https://facebook.com/" class="btn facebook">Facebook</a>
+    </div>
+
+    <p style="text-align:center; margin-top:15px;">
+      📞 069 200 644
+    </p>
+  </div>
+</section>
 
 <section>
   <h2>Proceduri Scalp</h2>
@@ -114,7 +46,9 @@
     <p class="price">500 lei</p>
     <p>Finisare cu tratament: +300 lei</p>
   </div>
+</section>
 
+<section>
   <h2>Cheratină – Botox Fierbinte</h2>
   <div class="card">
     <ul>
@@ -126,12 +60,15 @@
       <li>80 cm — 2800 lei</li>
       <li>90 cm — 3000 lei</li>
     </ul>
-    <p>Tratament pregătitor (păr deteriorat): +300 lei</p>
+    <p>Tratament pregătitor (păr foarte deteriorat): +300 lei</p>
   </div>
+</section>
 
+<section>
   <h2>Tratamente</h2>
+
   <div class="card">
-    <h3>Botox Rece – Reconstrucție</h3>
+    <h3>Reconstrucție – Botox Rece</h3>
     <ul>
       <li>50 cm — 800 lei</li>
       <li>60 cm — 900 lei</li>
@@ -151,26 +88,54 @@
       <li>90 cm — 2000 lei</li>
     </ul>
   </div>
+</section>
 
+<section>
   <h2>Informații importante</h2>
   <div class="card">
-    <p>✔️ Păr des: +200 lei</p>
+    <p>✔️ Supliment păr des: +200 lei / procedură</p>
     <p>✔️ Consultație: 150 lei</p>
     <p>✔️ Corecția vârfurilor: gratuit</p>
   </div>
+</section>
 
-  <h2>Locație</h2>
+<section>
+  <h2>Condiții înainte de procedură</h2>
   <div class="card">
-    <p>
-      Creangă 4, bloc<br>
-      Zona Economică Liberă<br>
+    <ul>
+      <li>Părul nu trebuie să fie vopsit sau decolorat cu min. 2 săptămâni înainte</li>
+      <li>Poza părului din spate, spălat și uscat natural</li>
+      <li>Haine comode, fără glugă sau guler înalt</li>
+      <li>Nu se efectuează cheratină fierbinte în sarcină</li>
+      <li>Reluarea procedurii: min. 6 luni după alăptare</li>
+      <li>Minore – doar cu acordul părinților</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Locația noastră</h2>
+  <div class="card">
+    <iframe
+      src="https://www.google.com/maps?q=Creangă%204%20Zona%20Economică%20Liberă&output=embed">
+    </iframe>
+
+    <p style="text-align:center; margin-top:10px;">
+      📍 Creangă 4, Zona Economică Liberă<br>
       Etaj 4, cabinet 417
+    </p>
+
+    <p style="text-align:center;">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Creangă 4 Zona Economică Liberă"
+         style="color:#b36b7a; font-weight:600;">
+        Pornește navigația
+      </a>
     </p>
   </div>
 </section>
 
 <footer>
-  📞 069200644<br>
+  📞 069 200 644<br>
   Beauty Hair Stella © 2026
 </footer>
 
