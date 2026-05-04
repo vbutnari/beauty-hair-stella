@@ -5,21 +5,20 @@
   <title>Beauty Hair Stella</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* Lang switch */
     .lang-switch {
       text-align: right;
       padding: 10px 20px;
     }
     .lang-btn {
-      background: none;
       border: none;
+      background: none;
       font-weight: 600;
       cursor: pointer;
       margin-left: 10px;
@@ -31,7 +30,6 @@
     .lang { display: none; }
     .lang.active { display: block; }
 
-    /* Gallery */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -63,10 +61,10 @@
   <div class="card">
     <h2>Contact & Programări</h2>
     <div class="buttons">
-      <a class="btn whatsapp" href="https://wa.me/37369200644" target="_blank">WhatsApp</a>
+      <a class="btn whatsapp" href="https://wa.me/37369200644">WhatsApp</a>
       <a class="btn viber" href="viber://chat?number=37369200644">Viber</a>
-      <a class="btn instagram" href="https://instagram.com" target="_blank">Instagram</a>
-      <a class="btn facebook" href="https://facebook.com" target="_blank">Facebook</a>
+      <a class="btn instagram" href="https://instagram.com/" target="_blank">Instagram</a>
+      <a class="btn facebook" href="https://facebook.com/" target="_blank">Facebook</a>
     </div>
     <p style="text-align:center;margin-top:15px;">📞 069 200 644</p>
   </div>
@@ -76,21 +74,74 @@
   <h2>Galerie lucrări</h2>
   <div class="card">
     <div class="gallery">
-      <img src="https://via.placeholder.com/400x500?text=Hair+1">
-      <img src="https://via.placeholder.com/400x500?text=Hair+2">
-      <img src="https://via.placeholder.com/400x500?text=Hair+3">
-      <img src="https://via.placeholder.com/400x500?text=Hair+4">
+      <img src="images/poza1.jpg" alt="Lucrare 1">
+      <img src="images/poza2.jpg" alt="Lucrare 2">
+      <img src="images/poza3.jpg" alt="Lucrare 3">
+      <img src="images/poza4.jpg" alt="Lucrare 4">
     </div>
+  </div>
+</section>
+
+<section>
+  <h2>Proceduri scalp</h2>
+  <div class="card">
+    <ul>
+      <li>Analiză trihoscopică</li>
+      <li>Peeling interior–exterior</li>
+      <li>Aranjare simplă</li>
+    </ul>
+    <p class="price">500 lei</p>
+    <p>Finisare cu tratament: +300 lei</p>
+  </div>
+</section>
+
+<section>
+  <h2>Cheratină – Botox Fierbinte</h2>
+  <div class="card">
+    <ul>
+      <li>30 cm — 1800 lei</li>
+      <li>40 cm — 2000 lei</li>
+      <li>50 cm — 2200 lei</li>
+      <li>60 cm — 2400 lei</li>
+      <li>70 cm — 2600 lei</li>
+      <li>80 cm — 2800 lei</li>
+      <li>90 cm — 3000 lei</li>
+    </ul>
+    <p>Tratament pregătitor (păr deteriorat): +300 lei</p>
+  </div>
+</section>
+
+<section>
+  <h2>Tratamente</h2>
+  <div class="card">
+    <h3>Reconstrucție – Botox Rece</h3>
+    <ul>
+      <li>50 cm — 800 lei</li>
+      <li>60 cm — 900 lei</li>
+      <li>70 cm — 1000 lei</li>
+      <li>80 cm — 1100 lei</li>
+      <li>90 cm — 1200 lei</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Miracle Therapy</h3>
+    <ul>
+      <li>50 cm — 1500 lei</li>
+      <li>60 cm — 1600 lei</li>
+      <li>70 cm — 1700 lei</li>
+      <li>80 cm — 1800 lei</li>
+      <li>90 cm — 2000 lei</li>
+    </ul>
   </div>
 </section>
 
 <section>
   <h2>Locația noastră</h2>
   <div class="card">
-    <iframe
+    <iframe 
       src="https://www.google.com/maps?q=Creangă%204%20Zona%20Economică%20Liberă&output=embed"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
+      width="100%" height="300" style="border:0;" allowfullscreen>
     </iframe>
 
     <p style="text-align:center;margin-top:10px;">
@@ -98,31 +149,10 @@
     </p>
 
     <p style="text-align:center;">
-      <a href="https://www.google.com/maps/dir/?api=1&destination=Creangă 4 Zona Economică Liberă"
-         target="_blank">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Creangă 4 Zona Economică Liberă" target="_blank">
         Pornește navigația
       </a>
     </p>
-  </div>
-</section>
-
-<footer>
-  Beauty Hair Stella © 2026
-</footer>
-</div>
-
-<!-- ================= RU ================= -->
-<div id="ru" class="lang">
-
-<header>
-  <h1>Beauty Hair Stella</h1>
-  <p>Премиальный уход за вашими волосами</p>
-</header>
-
-<section>
-  <div class="card">
-    <h2>Контакты и запись</h2>
-    <p style="text-align:center;">📞 069 200 644</p>
   </div>
 </section>
 
@@ -145,4 +175,3 @@ function switchLang(lang) {
 
 </body>
 </html>
-``
