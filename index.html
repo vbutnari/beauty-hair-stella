@@ -5,20 +5,21 @@
   <title>Beauty Hair Stella</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
   <style>
+    /* Language switch */
     .lang-switch {
       text-align: right;
       padding: 10px 20px;
     }
     .lang-btn {
-      border: none;
       background: none;
+      border: none;
       font-weight: 600;
       cursor: pointer;
       margin-left: 10px;
@@ -30,9 +31,10 @@
     .lang { display: none; }
     .lang.active { display: block; }
 
+    /* Gallery */
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 15px;
     }
     .gallery img {
@@ -54,7 +56,7 @@
 
 <header>
   <h1>Beauty Hair Stella</h1>
-  <p>Îngrijire premium pentru părul tău</p>
+  <p>Îngrijire profesională și rezultate vizibile pentru părul tău</p>
 </header>
 
 <section>
@@ -63,8 +65,8 @@
     <div class="buttons">
       <a class="btn whatsapp" href="https://wa.me/37369200644">WhatsApp</a>
       <a class="btn viber" href="viber://chat?number=37369200644">Viber</a>
-      <a class="btn instagram" href="https://instagram.com/" target="_blank">Instagram</a>
-      <a class="btn facebook" href="https://facebook.com/" target="_blank">Facebook</a>
+      <a class="btn instagram" href="https://instagram.com/">Instagram</a>
+      <a class="btn facebook" href="https://facebook.com/">Facebook</a>
     </div>
     <p style="text-align:center;margin-top:15px;">📞 069 200 644</p>
   </div>
@@ -79,19 +81,22 @@
       <img src="images/poza3.jpg" alt="Lucrare 3">
       <img src="images/poza4.jpg" alt="Lucrare 4">
     </div>
+    <p style="text-align:center;font-size:14px;">
+      Rezultatele pot varia în funcție de tipul și starea părului
+    </p>
   </div>
 </section>
 
 <section>
-  <h2>Proceduri scalp</h2>
+  <h2>Proceduri Scalp</h2>
   <div class="card">
     <ul>
       <li>Analiză trihoscopică</li>
-      <li>Peeling interior–exterior</li>
+      <li>Peeling nivel interior – exterior</li>
       <li>Aranjare simplă</li>
     </ul>
-    <p class="price">500 lei</p>
-    <p>Finisare cu tratament: +300 lei</p>
+    <p class="price">Preț: 500 lei</p>
+    <p>✔️ Finisare cu tratament: +300 lei</p>
   </div>
 </section>
 
@@ -107,12 +112,13 @@
       <li>80 cm — 2800 lei</li>
       <li>90 cm — 3000 lei</li>
     </ul>
-    <p>Tratament pregătitor (păr deteriorat): +300 lei</p>
+    <p>✔️ Pentru păr foarte deteriorat se recomandă tratament pregătitor: +300 lei</p>
   </div>
 </section>
 
 <section>
   <h2>Tratamente</h2>
+
   <div class="card">
     <h3>Reconstrucție – Botox Rece</h3>
     <ul>
@@ -137,19 +143,41 @@
 </section>
 
 <section>
+  <h2>Informații Suplimentare</h2>
+  <div class="card">
+    <p>✔️ Supliment păr des: +200 lei / procedură</p>
+    <p>✔️ Consultație: 150 lei</p>
+    <p>✔️ Corecția vârfurilor: gratuit</p>
+  </div>
+</section>
+
+<section>
+  <h2>Condiții înainte de procedură</h2>
+  <div class="card">
+    <ul>
+      <li>Părul nu trebuie vopsit sau decolorat cu min. 2 săptămâni înainte</li>
+      <li>Este necesară o fotografie a părului din spate</li>
+      <li>Nu se efectuează cheratină fierbinte în timpul sarcinii</li>
+      <li>Procedura poate fi reluată la min. 6 luni după alăptare</li>
+      <li>Persoanele minore – doar cu acordul părinților</li>
+    </ul>
+  </div>
+</section>
+
+<section>
   <h2>Locația noastră</h2>
   <div class="card">
-    <iframe 
+    <iframe
       src="https://www.google.com/maps?q=Creangă%204%20Zona%20Economică%20Liberă&output=embed"
-      width="100%" height="300" style="border:0;" allowfullscreen>
-    </iframe>
+      loading="lazy"></iframe>
 
     <p style="text-align:center;margin-top:10px;">
-      📍 Creangă 4, Zona Economică Liberă, etaj 4, cabinet 417
+      📍 Creangă 4, Zona Economică Liberă<br>
+      Etaj 4, cabinet 417
     </p>
 
     <p style="text-align:center;">
-      <a href="https://www.google.com/maps/dir/?api=1&destination=Creangă 4 Zona Economică Liberă" target="_blank">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Creangă 4 Zona Economică Liberă">
         Pornește navigația
       </a>
     </p>
@@ -159,6 +187,7 @@
 <footer>
   Beauty Hair Stella © 2026
 </footer>
+
 </div>
 
 <script>
@@ -175,3 +204,4 @@ function switchLang(lang) {
 
 </body>
 </html>
+``
