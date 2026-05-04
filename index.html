@@ -8,10 +8,11 @@
   <!-- Google Font -->
   https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap
 
-  <!-- CSS -->
+  <!-- CSS extern -->
   style.css
 
   <style>
+    /* Language switch */
     .lang-switch {
       text-align: right;
       padding: 10px 20px;
@@ -30,6 +31,7 @@
     .lang { display: none; }
     .lang.active { display: block; }
 
+    /* Gallery */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -44,17 +46,18 @@
 
 <body>
 
+<!-- ================= LANGUAGE SWITCH ================= -->
 <div class="lang-switch">
   <button id="btn-ro" class="lang-btn active" onclick="switchLang('ro')">RO</button>
   <button id="btn-ru" class="lang-btn" onclick="switchLang('ru')">RU</button>
 </div>
 
-<!-- ================= RO ================= -->
+<!-- ====================== RO ====================== -->
 <div id="ro" class="lang active">
 
 <header>
   <h1>Beauty Hair Stella</h1>
-  <p>Îngrijire profesională și rezultate vizibile</p>
+  <p>Îngrijire profesională și rezultate vizibile pentru părul tău</p>
 </header>
 
 <section>
@@ -91,7 +94,70 @@
       <li>Aranjare simplă</li>
     </ul>
     <p class="price">Preț: 500 lei</p>
-    <p>✔️ Finisare procedură: +300 lei</p>
+    <p>✔️ Finisarea procedurii cu tratament: +300 lei</p>
+  </div>
+</section>
+
+<section>
+  <h2>Cheratină – Botox Fierbinte</h2>
+  <div class="card">
+    <ul>
+      <li>30 cm — 1800 lei</li>
+      <li>40 cm — 2000 lei</li>
+      <li>50 cm — 2200 lei</li>
+      <li>60 cm — 2400 lei</li>
+      <li>70 cm — 2600 lei</li>
+      <li>80 cm — 2800 lei</li>
+      <li>90 cm — 3000 lei</li>
+    </ul>
+    <p>✔️ Tratament pregătitor (păr deteriorat): +300 lei</p>
+  </div>
+</section>
+
+<section>
+  <h2>Tratamente</h2>
+  <div class="card">
+    <h3>Reconstrucție – Botox Rece</h3>
+    <ul>
+      <li>50 cm — 800 lei</li>
+      <li>60 cm — 900 lei</li>
+      <li>70 cm — 1000 lei</li>
+      <li>80 cm — 1100 lei</li>
+      <li>90 cm — 1200 lei</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Miracle Therapy</h3>
+    <ul>
+      <li>50 cm — 1500 lei</li>
+      <li>60 cm — 1600 lei</li>
+      <li>70 cm — 1700 lei</li>
+      <li>80 cm — 1800 lei</li>
+      <li>90 cm — 2000 lei</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Informații suplimentare</h2>
+  <div class="card">
+    <p>✔️ Pentru păr des: +200 lei / procedură</p>
+    <p>✔️ Consultație: 150 lei</p>
+    <p>✔️ Corecția vârfurilor: gratuit</p>
+  </div>
+</section>
+
+<section>
+  <h2>Condiții înainte de procedură</h2>
+  <div class="card">
+    <ul>
+      <li>Părul nu trebuie vopsit/decolorat cu min. 2 săptămâni înainte</li>
+      <li>Este necesară o fotografie a părului din spate</li>
+      <li>Nu se efectuează cheratină fierbinte în timpul sarcinii</li>
+      <li>Procedura poate fi reluată la min. 6 luni după alăptare</li>
+      <li>Persoanele minore – doar cu acordul părinților</li>
+    </ul>
   </div>
 </section>
 
@@ -116,19 +182,20 @@
 <footer>
   Beauty Hair Stella © 2026
 </footer>
+
 </div>
 
-<!-- ================= RU ================= -->
+<!-- ====================== RU ====================== -->
 <div id="ru" class="lang">
 
 <header>
   <h1>Beauty Hair Stella</h1>
-  <p>Профессиональный уход за волосами</p>
+  <p>Профессиональный уход и видимый результат</p>
 </header>
 
 <section>
   <div class="card">
-    <h2>Контакты</h2>
+    <h2>Контакты и запись</h2>
     <p style="text-align:center;">📞 069 200 644</p>
   </div>
 </section>
@@ -136,6 +203,7 @@
 <footer>
   Beauty Hair Stella © 2026
 </footer>
+
 </div>
 
 <script>
