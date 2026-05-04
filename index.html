@@ -5,34 +5,21 @@
   <title>Beauty Hair Stella</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap
-  style.css
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
   <style>
-    /* Galerie */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 15px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 14px;
-      cursor: pointer;
-      transition: transform 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    /* Language switch */
+    /* Lang switch */
     .lang-switch {
       text-align: right;
       padding: 10px 20px;
     }
     .lang-btn {
-      border: none;
       background: none;
+      border: none;
       font-weight: 600;
       cursor: pointer;
       margin-left: 10px;
@@ -41,11 +28,18 @@
       color: var(--primary);
       text-decoration: underline;
     }
-    .lang {
-      display: none;
+    .lang { display: none; }
+    .lang.active { display: block; }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
     }
-    .lang.active {
-      display: block;
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
     }
   </style>
 </head>
@@ -53,10 +47,11 @@
 <body>
 
 <div class="lang-switch">
-  RORU</button>
+  <button id="btn-ro" class="lang-btn active" onclick="switchLang('ro')">RO</button>
+  <button id="btn-ru" class="lang-btn" onclick="switchLang('ru')">RU</button>
 </div>
 
-<!-- ================= ROMÂNĂ ================= -->
+<!-- ================= RO ================= -->
 <div id="ro" class="lang active">
 
 <header>
@@ -68,12 +63,12 @@
   <div class="card">
     <h2>Contact & Programări</h2>
     <div class="buttons">
-      https://wa.me/37369200644
-      viber://chat?number=37369200644Viber</a>
-      https://instagram.com/
-      https://facebook.com/Facebook</a>
+      <a class="btn whatsapp" href="https://wa.me/37369200644" target="_blank">WhatsApp</a>
+      <a class="btn viber" href="viber://chat?number=37369200644">Viber</a>
+      <a class="btn instagram" href="https://instagram.com" target="_blank">Instagram</a>
+      <a class="btn facebook" href="https://facebook.com" target="_blank">Facebook</a>
     </div>
-    <p style="text-align:center;">📞 069 200 644</p>
+    <p style="text-align:center;margin-top:15px;">📞 069 200 644</p>
   </div>
 </section>
 
@@ -86,22 +81,25 @@
       <img src="https://via.placeholder.com/400x500?text=Hair+3">
       <img src="https://via.placeholder.com/400x500?text=Hair+4">
     </div>
-    <p style="text-align:center; font-size:14px;">Rezultatele pot varia în funcție de tipul părului</p>
   </div>
 </section>
 
 <section>
   <h2>Locația noastră</h2>
   <div class="card">
-    <iframe src="https://www.google.com/maps?q=Creangă%204%20Zona%20Economică%20Liberă&output=embed"></iframe>
+    <iframe
+      src="https://www.google.com/maps?q=Creangă%204%20Zona%20Economică%20Liberă&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
 
-    <p style="text-align:center;">
-      📍 Creangă 4, Zona Economică Liberă<br>
-      Etaj 4, cabinet 417
+    <p style="text-align:center;margin-top:10px;">
+      📍 Creangă 4, Zona Economică Liberă, etaj 4, cabinet 417
     </p>
 
     <p style="text-align:center;">
-      https://www.google.com/maps/dir/?api=1&destination=Creangă 4 Zona Economică Liberă
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Creangă 4 Zona Economică Liberă"
+         target="_blank">
         Pornește navigația
       </a>
     </p>
@@ -111,10 +109,9 @@
 <footer>
   Beauty Hair Stella © 2026
 </footer>
-
 </div>
 
-<!-- ================= RUSĂ ================= -->
+<!-- ================= RU ================= -->
 <div id="ru" class="lang">
 
 <header>
@@ -125,63 +122,27 @@
 <section>
   <div class="card">
     <h2>Контакты и запись</h2>
-    <div class="buttons">
-      https://wa.me/37369200644
-      viber://chat?number=37369200644Viber</a>
-      https://instagram.com/
-      https://facebook.com/Facebook</a>
-    </div>
     <p style="text-align:center;">📞 069 200 644</p>
-  </div>
-</section>
-
-<section>
-  <h2>Галерея работ</h2>
-  <div class="card">
-    <div class="gallery">
-      <img src="https://via.placeholder.com/400x500?text=Hair+1">
-      <img src="https://via.placeholder.com/400x500?text=Hair+2">
-      <img src="https://via.placeholder.com/400x500?text=Hair+3">
-      <img src="https://via.placeholder.com/400x500?text=Hair+4">
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Наш адрес</h2>
-  <div class="card">
-    <iframe src="https://www.google.com/maps?q=Creangă%204%20Zona%20Economică%20Liberă&output=embed"></iframe>
-
-    <p style="text-align:center;">
-      📍 Creangă 4, Zona Economică Liberă<br>
-      4 этаж, кабинет 417
-    </p>
-
-    <p style="text-align:center;">
-      https://www.google.com/maps/dir/?api=1&destination=Creangă 4 Zona Economică Liberă
-        Построить маршрут
-      </a>
-    </p>
   </div>
 </section>
 
 <footer>
   Beauty Hair Stella © 2026
 </footer>
-
 </div>
 
 <script>
-  function switchLang(lang) {
-    document.getElementById("ro").classList.remove("active");
-    document.getElementById("ru").classList.remove("active");
-    document.getElementById(lang).classList.add("active");
+function switchLang(lang) {
+  document.getElementById('ro').classList.remove('active');
+  document.getElementById('ru').classList.remove('active');
+  document.getElementById(lang).classList.add('active');
 
-    document.getElementById("btn-ro").classList.remove("active");
-    document.getElementById("btn-ru").classList.remove("active");
-    document.getElementById("btn-" + lang).classList.add("active");
-  }
+  document.getElementById('btn-ro').classList.remove('active');
+  document.getElementById('btn-ru').classList.remove('active');
+  document.getElementById('btn-' + lang).classList.add('active');
+}
 </script>
 
 </body>
 </html>
+``
