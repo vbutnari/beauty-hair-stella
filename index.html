@@ -5,13 +5,59 @@
   <title>Beauty Hair Stella</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap
+  style.css
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Galerie */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Language switch */
+    .lang-switch {
+      text-align: right;
+      padding: 10px 20px;
+    }
+    .lang-btn {
+      border: none;
+      background: none;
+      font-weight: 600;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    .lang-btn.active {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    .lang {
+      display: none;
+    }
+    .lang.active {
+      display: block;
+    }
+  </style>
 </head>
+
 <body>
+
+<div class="lang-switch">
+  RORU</button>
+</div>
+
+<!-- ================= ROMÂNĂ ================= -->
+<div id="ro" class="lang active">
 
 <header>
   <h1>Beauty Hair Stella</h1>
@@ -21,113 +67,41 @@
 <section>
   <div class="card">
     <h2>Contact & Programări</h2>
-
     <div class="buttons">
-      <a href="https://wa.me/37369200644" class="btn whatsapp">WhatsApp</a>
-      <a href="viber://chat?number=37369200644" class="btn viber">Viber</a>
-      <a href="https://instagram.com/" class="btn instagram">Instagram</a>
-      <a href="https://facebook.com/" class="btn facebook">Facebook</a>
+      https://wa.me/37369200644
+      viber://chat?number=37369200644Viber</a>
+      https://instagram.com/
+      https://facebook.com/Facebook</a>
     </div>
-
-    <p style="text-align:center; margin-top:15px;">
-      📞 069 200 644
-    </p>
+    <p style="text-align:center;">📞 069 200 644</p>
   </div>
 </section>
 
 <section>
-  <h2>Proceduri Scalp</h2>
+  <h2>Galerie lucrări</h2>
   <div class="card">
-    <ul>
-      <li>✔️ Analiză trihoscopică</li>
-      <li>✔️ Peeling interior–exterior</li>
-      <li>✔️ Aranjare simplă</li>
-    </ul>
-    <p class="price">500 lei</p>
-    <p>Finisare cu tratament: +300 lei</p>
-  </div>
-</section>
-
-<section>
-  <h2>Cheratină – Botox Fierbinte</h2>
-  <div class="card">
-    <ul>
-      <li>30 cm — 1800 lei</li>
-      <li>40 cm — 2000 lei</li>
-      <li>50 cm — 2200 lei</li>
-      <li>60 cm — 2400 lei</li>
-      <li>70 cm — 2600 lei</li>
-      <li>80 cm — 2800 lei</li>
-      <li>90 cm — 3000 lei</li>
-    </ul>
-    <p>Tratament pregătitor (păr foarte deteriorat): +300 lei</p>
-  </div>
-</section>
-
-<section>
-  <h2>Tratamente</h2>
-
-  <div class="card">
-    <h3>Reconstrucție – Botox Rece</h3>
-    <ul>
-      <li>50 cm — 800 lei</li>
-      <li>60 cm — 900 lei</li>
-      <li>70 cm — 1000 lei</li>
-      <li>80 cm — 1100 lei</li>
-      <li>90 cm — 1200 lei</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Miracle Therapy</h3>
-    <ul>
-      <li>50 cm — 1500 lei</li>
-      <li>60 cm — 1600 lei</li>
-      <li>70 cm — 1700 lei</li>
-      <li>80 cm — 1800 lei</li>
-      <li>90 cm — 2000 lei</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Informații importante</h2>
-  <div class="card">
-    <p>✔️ Supliment păr des: +200 lei / procedură</p>
-    <p>✔️ Consultație: 150 lei</p>
-    <p>✔️ Corecția vârfurilor: gratuit</p>
-  </div>
-</section>
-
-<section>
-  <h2>Condiții înainte de procedură</h2>
-  <div class="card">
-    <ul>
-      <li>Părul nu trebuie să fie vopsit sau decolorat cu min. 2 săptămâni înainte</li>
-      <li>Poza părului din spate, spălat și uscat natural</li>
-      <li>Haine comode, fără glugă sau guler înalt</li>
-      <li>Nu se efectuează cheratină fierbinte în sarcină</li>
-      <li>Reluarea procedurii: min. 6 luni după alăptare</li>
-      <li>Minore – doar cu acordul părinților</li>
-    </ul>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x500?text=Hair+1">
+      <img src="https://via.placeholder.com/400x500?text=Hair+2">
+      <img src="https://via.placeholder.com/400x500?text=Hair+3">
+      <img src="https://via.placeholder.com/400x500?text=Hair+4">
+    </div>
+    <p style="text-align:center; font-size:14px;">Rezultatele pot varia în funcție de tipul părului</p>
   </div>
 </section>
 
 <section>
   <h2>Locația noastră</h2>
   <div class="card">
-    <iframe
-      src="https://www.google.com/maps?q=Creangă%204%20Zona%20Economică%20Liberă&output=embed">
-    </iframe>
+    <iframe src="https://www.google.com/maps?q=Creangă%204%20Zona%20Economică%20Liberă&output=embed"></iframe>
 
-    <p style="text-align:center; margin-top:10px;">
+    <p style="text-align:center;">
       📍 Creangă 4, Zona Economică Liberă<br>
       Etaj 4, cabinet 417
     </p>
 
     <p style="text-align:center;">
-      <a href="https://www.google.com/maps/dir/?api=1&destination=Creangă 4 Zona Economică Liberă"
-         style="color:#b36b7a; font-weight:600;">
+      https://www.google.com/maps/dir/?api=1&destination=Creangă 4 Zona Economică Liberă
         Pornește navigația
       </a>
     </p>
@@ -135,9 +109,79 @@
 </section>
 
 <footer>
-  📞 069 200 644<br>
   Beauty Hair Stella © 2026
 </footer>
+
+</div>
+
+<!-- ================= RUSĂ ================= -->
+<div id="ru" class="lang">
+
+<header>
+  <h1>Beauty Hair Stella</h1>
+  <p>Премиальный уход за вашими волосами</p>
+</header>
+
+<section>
+  <div class="card">
+    <h2>Контакты и запись</h2>
+    <div class="buttons">
+      https://wa.me/37369200644
+      viber://chat?number=37369200644Viber</a>
+      https://instagram.com/
+      https://facebook.com/Facebook</a>
+    </div>
+    <p style="text-align:center;">📞 069 200 644</p>
+  </div>
+</section>
+
+<section>
+  <h2>Галерея работ</h2>
+  <div class="card">
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x500?text=Hair+1">
+      <img src="https://via.placeholder.com/400x500?text=Hair+2">
+      <img src="https://via.placeholder.com/400x500?text=Hair+3">
+      <img src="https://via.placeholder.com/400x500?text=Hair+4">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Наш адрес</h2>
+  <div class="card">
+    <iframe src="https://www.google.com/maps?q=Creangă%204%20Zona%20Economică%20Liberă&output=embed"></iframe>
+
+    <p style="text-align:center;">
+      📍 Creangă 4, Zona Economică Liberă<br>
+      4 этаж, кабинет 417
+    </p>
+
+    <p style="text-align:center;">
+      https://www.google.com/maps/dir/?api=1&destination=Creangă 4 Zona Economică Liberă
+        Построить маршрут
+      </a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  Beauty Hair Stella © 2026
+</footer>
+
+</div>
+
+<script>
+  function switchLang(lang) {
+    document.getElementById("ro").classList.remove("active");
+    document.getElementById("ru").classList.remove("active");
+    document.getElementById(lang).classList.add("active");
+
+    document.getElementById("btn-ro").classList.remove("active");
+    document.getElementById("btn-ru").classList.remove("active");
+    document.getElementById("btn-" + lang).classList.add("active");
+  }
+</script>
 
 </body>
 </html>
