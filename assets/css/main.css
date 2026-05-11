@@ -2365,4 +2365,19 @@ input, select, textarea {
   }
 
 }
-``
+
+/* === iOS FINAL FIX: force scroll repaint === */
+@supports (-webkit-touch-callout: none) {
+
+  /* dezactivează complet parallax pe iOS */
+  #intro,
+  #one,
+  #two,
+  #prices-scalp,
+  #prices-keratin,
+  #prices-botox,
+  #prices-miracle {
+    background-attachment: scroll !important;
+  }
+
+}
