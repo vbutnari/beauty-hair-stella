@@ -2268,6 +2268,37 @@ input, select, textarea {
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
+/* Prices – Proceduri Scalp */
+#prices-scalp {
+    background: url("images/overlay.png"), url("../../images/prices-scalp.jpg");
+    background-size: 256px 256px, cover;
+    background-attachment: fixed, fixed;
+    background-position: top left, center center;
+}
+
+/* Prices – Cheratină */
+#prices-keratin {
+    background: url("images/overlay.png"), url("../../images/prices-keratin.jpg");
+    background-size: 256px 256px, cover;
+    background-attachment: fixed, fixed;
+    background-position: top left, center center;
+}
+
+/* Prices – Botox Rece */
+#prices-botox {
+    background: url("images/overlay.png"), url("../../images/prices-botox.jpg");
+    background-size: 256px 256px, cover;
+    background-attachment: fixed, fixed;
+    background-position: top left, center center;
+}
+
+/* Prices – Miracle Therapy */
+#prices-miracle {
+    background: url("images/overlay.png"), url("../../images/prices-miracle.jpg");
+    background-size: 256px 256px, cover;
+    background-attachment: fixed, fixed;
+    background-position: top left, center center;
+}
 
 /* Contact */
 
