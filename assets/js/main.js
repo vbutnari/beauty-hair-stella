@@ -17,8 +17,8 @@
 			xlarge:  [ '1281px',  '1680px' ],
 			large:   [ '1001px',  '1280px' ],
 			medium:  [ '737px',   '1000px' ],
-			small:   [ '481px',   '736px'  ],
-			xsmall:  [ null,      '480px'  ]
+			small:   [ '361px',   '736px'  ],
+			xsmall:  [ null,      '360x'  ]
 		});
 
 	// Play initial animations on page load.
