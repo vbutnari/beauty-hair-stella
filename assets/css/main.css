@@ -2341,3 +2341,28 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* === FORCE SCROLL ANIMATIONS ON iOS === */
+@supports (-webkit-touch-callout: none) {
+
+  /* Forțează repaint-ul la scroll */
+  .main,
+  .main .content,
+  .gallery article {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  /* Resetează animațiile blocate de is-touch */
+  body.is-touch .main.inactive > .content {
+    opacity: 0;
+  }
+
+  body.is-touch .main > .content {
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+}
+``
