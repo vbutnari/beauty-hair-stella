@@ -2341,3 +2341,17 @@ input, select, textarea {
 			}
 
 		}
+/* MOBILE SAFETY: ensure content is visible on phones */
+@media screen and (max-width: 736px) {
+
+  .main,
+  .main.inactive,
+  .gallery,
+  .gallery.inactive,
+  #contact,
+  #contact.inactive {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+}
