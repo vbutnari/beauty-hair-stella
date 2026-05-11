@@ -182,7 +182,7 @@
 			breakpoints.on('<=small', off);
 			breakpoints.on('>small', on);
 
-			on();
+			
 
 		}
 
